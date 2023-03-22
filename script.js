@@ -1,17 +1,17 @@
-//saya taruh diatas agar website nya tidak ter refresh setelah selesai mengkalkulasi
+// saya taruh diatas agar website nya tidak ter refresh setelah selesai mengkalkulasi
 var form = document.getElementById("form");
 
-//Fungsi untuk mereset kolom
+// Fungsi untuk mereset kolom
 function handleForm(event) { 
 	event.preventDefault();  
 	calculateBMI(); }
 
 
-//fungsi untuk mereset "BMI mu adalah" tapi belum bisa
+// Fungsi untuk mereset "BMI mu adalah" tapi belum bisa
 function refreshPage(){
     window.location.reload();
 } 
-// function resetBMI(event){
+//  function resetBMI(event){
 // 	var result = document.getElementsByClassName("result");
 // 	result.innerHTML="00.00"
 // 	event.preventDefault();
