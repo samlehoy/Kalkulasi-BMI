@@ -14,8 +14,7 @@
 				<p>Berat badan ideal adalah impian semua orang, Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? 
 				Yuk, hitung sekarang di Kalkulator BMI !
 				</p>
-			</div>
-			<br></br>
+			</div></br>
 			
 			<form id="form" onsubmit="return calculateBMI()">
 				<div class="form-box">
@@ -34,7 +33,14 @@
 						<input type="number" id="height" name="height" required><br><br>
 						<input type="submit" value="Kalkulasi BMI">
 						<input type="reset" value="Reset">
-						<div class="result">
+					</div>
+				</div>
+			</form>
+			<br>
+			<form id="form">
+				<div class="form-box">
+					<div class="result">
+						<div class="form-value">
 							</br>
 							<p1>BMI mu adalah</p1>
 							</br>
@@ -54,18 +60,26 @@
 				2.Menentukan kategori berat badan ideal atau tidak </br> 
 				3.Mempersiapkan program penurunan berat badan </br>
 			</p>
-				<br></br>
+				</br>
 			<p style="justify-content: center;">
 				Kalkulator ini hanya boleh digunakan oleh orang dewasa 
 				(wanita hamil atau menyusui tidak boleh mengandalakan pembacaan BMI ini) 
 				dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain selain berkonsultansi dengan orang yang memenuhi syarat seperti dokter.
 			</p>
-				<br></br>
+				</br>
 			<p style="justify-content: center;">
 				Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) 
 				dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M²
 			</div>
 		</div>
+
+	<!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div></div>
 	</div>
 	
 
