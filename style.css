@@ -12,8 +12,6 @@
 }
 }
 
-
-
 .row {
 	display: flex;
 	width: 959px;
@@ -31,7 +29,6 @@
 	justify-content: center;
 	align-items: center;
 }
-
 
 .hide-columnbmi {
  display: none
@@ -125,7 +122,6 @@ form {
 	text-align: center;
 	color: white;
 }
-
 
 .form-box{
     position: relative;
