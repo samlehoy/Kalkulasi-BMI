@@ -1,11 +1,12 @@
-	var form = document.getElementById("form");
+//saya taruh diatas agar website nya tidak ter refresh setelah selesai mengkalkulasi
+var form = document.getElementById("form");
 
 //Fungsi untuk mereset kolom
 function handleForm(event) { 
 	calculateBMI()
 	event.preventDefault(); } 
 
-//fungsi untuk mereset "BMI mu adalah" tapi gk bisa
+//fungsi untuk mereset "BMI mu adalah" tapi belum bisa
 function resetBMI(event){
 	result.innerHTML="00.00"
 	event.preventDefault();
@@ -19,6 +20,7 @@ function calculateBMI() {
 	let weight = parseFloat(document.getElementById("weight").value);
 	let height = parseFloat(document.getElementById("height").value);
 	let gender = document.getElementById("gender").value;
+	let categoryArea = document.querySelector(".comment");
 	const result = document.getElementById("result");
 	// Check apakah input sudah benar
 	if (isNaN(weight) || isNaN(height) || gender === "") {
@@ -29,7 +31,7 @@ function calculateBMI() {
 	// Convert tinggi ke meter
 	height /= 100;
 	
-	// Kalkulasi BMI
+	// Kalkulasi BMI/rumusnya
 	let bmi = weight / (height * height);
 	
 	// Membulatkan hasil BMI menjadi 2 angka desimal dibelakang koma
@@ -51,10 +53,15 @@ function calculateBMI() {
 		} else if (bmi < 26.4) {
 			category = "Normal";
 		}
+		// Klasifikasi berat badan (not working)
+		categoryArea.style.display = "block";
+		document.querySelector(".comment").innerHTML = `You are <span id="comment">${category}</span>`;
+		document.querySelector("#category").innerHTML = bmi.toFixed(2);
+			
 	} else{
 	}
 	// Alert untuk menampilkan hasil BMI
-	alert(bmi)
+	alert(category)
 	result.innerHTML = bmi;
 	return false
 }
