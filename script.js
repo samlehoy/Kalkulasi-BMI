@@ -86,7 +86,7 @@ function calculateBMI() {
 	document.querySelector(".comment2").innerHTML = `<span id="comment2">${explain}</span>`;
 	document.querySelector("#result").innerHTML = bmi;
 
-	// Untuk menampilkan kolom BMI
+	// Menampilkan .form2 atau hideBMI column
 	document.getElementById("form2").classList.remove("hide-columnbmi");
 
 }
